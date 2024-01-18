@@ -2,7 +2,7 @@ body{
 margin: 0;
 padding: 0;
 font-family: 'Cascadia Code', Consolas, 'Courier New', monospace;
-height: 300vh;
+height: auto;
 width: 100%;
 }
 html{
@@ -82,7 +82,7 @@ font-size: 80px;
 #main1 img{
     height: 500px;
 }
-#kvadrat{
+#main1kvadrat{
     width: 330px;
     padding: 40px 40px 0 0 ;
     height: 500px;
@@ -92,7 +92,7 @@ font-size: 80px;
 
 }
 
-#tekst1{
+#maintext{
     color: #2a52be;
     display: flex;
     flex-direction: column;
@@ -116,20 +116,11 @@ font-size: 80px;
     height: 100vh;
     display: flex;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
 
 }
-#xy1{
-    text-align: center;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: center;
-    margin-left: 5%;
-}
-#tekst2{
+#text2{
     font-size: 30px;
     text-align: center;
     display: flex;
@@ -139,29 +130,9 @@ font-size: 80px;
     width: 90%;
     margin-left: 5%;
 }
-#omeni{
+#main2text1{
     font-size: 40px;
     text-align: center;
-}
-#omenidesno{
-    width: 15%;
-    height: 100vh;
-    font-size: 60px;
-    background-color: #645244;
-    color: #cfcfcd;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-#O{
-    margin-top: 300px;
-}
-.M{
-    margin: 0;
-    font-size: 60px;
-    background-color: #645244;
-    color: #cfcfcd;
-    display: flex;
 }
 #glavnihr{
     width: 90%;
@@ -173,63 +144,256 @@ font-size: 80px;
 #main3{
     display: flex;
     flex-direction: row;
-    width: 100%;
-    margin-left: 5%;
+    width: 90%;
+    margin: 0 5%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
 }
-.no{
-    margin: 170px 0 0 0;
-    font-size: 80px;
-}
-.no_{
-    font-size: 50px;
-    margin: 0;
-}
-#lijevo1{
-    width: 45%;
-    font-size: 25px;
-}
-#q{
+
+#main4text{
     text-align: right;
     color: #2a52be;
 }
 
-#drugihr{
+#classichr{
     width: 100%;
     margin: 0;
     margin-top: 20px;
 }
-#desno1{
-    width: 5%;
+#corel img{
+    width: 400px;
+}
+#corel{
+    transition: 1s;
+    height: 460px;
+    width: 400px;
+    display: flex;
+}
+#corel:hover{
+    transition: 1s;
+    margin: 0 50px 0px 0px;
+    width: 800px;
+}
+#insidecorel{
+    width: 400px;
+    height: 460px;
+    background-color:#cfcfcd;
+    align-items: center;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 30px;
+}
+#insidecorel button{
+    width: 150px;
+    height: 70px;
+    font-family: 'Cascadia Code', Consolas, 'Courier New', monospace;
+    font-size: 20px;
+    background-color:#645244;
+    color: white;
+    border: none;
+    transition: 1s;
+    cursor: pointer;
+}
+#insidecorel button a{
+    text-decoration: none;
+    color: white;
+}
+#corel:hover img + #insidecorel{
+    display: flex;
+    transition: 1s;
+}
+#c img{
+    width: 400px;
+}
+#c{
+    transition: 1s;
+    height: 460px;
+    width: 400px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+#c:hover{
+    transition: 1s;
+    margin: 0 50px 0px 0px;
+    width: 800px;
+}
+#insidec{
+    width: 400px;
+    height: 460px;
+    background-color:#cfcfcd;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+    padding: 0 20px;
+    text-align: center;
+}
+#insidec button{
+    
+}
+#c:hover img +#insidec{
+    display: flex;
+}
+.main3button{
+    width: 300px;
+    font-size: 20px;
+    background-color: #645244;
+    color: white;
+    font-family: 'Cascadia Code', Consolas, 'Courier New', monospace;
+    border: none;
+    margin-top: 20px;
+    height: 80px;
+    padding:0 40px;
+    cursor: pointer;
+}
+.main3button a{
+    text-decoration: none;
+    color: white;
+}
+#main4{
+    width: 90%;
+    margin: 0 5%;
     height: 100vh;
-    background-color: #2a52be;
-    font-size: 50px;
-    color: #cfcfcd;
+    padding: 100px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+#main4right{
+    width: 45%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+#main4left{
+    width: 45%;
+    height: 100%;
+}
+#main4naslov{
+    font-size: 50px;
+    text-align: right;
+}
+.main4text{
+    width: 90%;
+    font-size: 20px;
+    text-align: right;
+}
+#main4left{
+    display: flex;
     justify-content: center;
+    align-items: center;
+    justify-content: space-around;
 }
-#desno1 p{
-margin: 0;
+#main5{
+    height: 100vh;
+    width: 90%;
+    margin: 0 5%;
+    padding-top: 120px;
 }
-#desno1 p{
-    margin: 0;
-}
-#desno1 ul{
-    list-style-type: none;
-    margin: 0;
-    padding:0;
+#main5naslov{
+    font-size: 50px;
     text-align: center;
 }
-#e{
-    font-size: 30px;
-    margin: 100px 0 0 0;
-    
+#main5text{
+    font-size: 25px;
+    text-align: center;
 }
-#main3main{
-    height: 100vh;
-    padding: 0;
-    width: 90%;
+#main5pics{
+    margin: 50px 0 0 0;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+}
+#main5pics img{
+    height: 400px;
+}
+#main6{
+    width: 90%;
+    margin: 0 5%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
     flex-direction: column;
 }
+#main6naslov{
+    margin: 200px 0 100px 0;
+    font-size: 50px;
+    text-align: center;
+}
+#main6text{
+    width: 90%;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 100px;
+}
+#download{
+    padding: 20px 30px;
+    background-color: #2a52be;
+    color: white;
+    cursor: pointer;
+    margin: 20px 0 0 0;
+}
+#download a{
+    font-size: 30px;
+    font-family:'Cascadia Code', Consolas, 'Courier New', monospace;
+    color: white;
+    text-decoration: none;
+}
+#main7{
+    width: 90%;
+    margin: 0 5%;
+    height: 100vh;
+    padding: 120px 0 0 0;    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.main7div{
+    width: 45%;
+    height: 15%;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    justify-content: start;
+    border-bottom: 1px solid #2a52be;
+}
+.main7div:last-child{
+    width: 90%;
+    justify-content: center;
+}
+.main7div:last-child img{
+    justify-content: center;
+    margin-right: 0;
+}
+.main7div img{
+    height: 80%; 
+    margin-right: 50px;
+}
+.main7diveven{
+    width: 45%;
+    height: 15%;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    font-size: 30px;
+    justify-content: end;
+    border-bottom: 1px solid #2a52be;
+}
+.main7diveven img{
+    height: 80%; 
+    margin-left: 50px;
+}
+
+
