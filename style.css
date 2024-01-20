@@ -233,9 +233,6 @@ font-size: 80px;
     padding: 0 20px;
     text-align: center;
 }
-#insidec button{
-    
-}
 #c:hover img +#insidec{
     display: flex;
 }
@@ -404,6 +401,11 @@ font-size: 80px;
     height: 80%; 
     margin-left: 50px;
 }
+/*
+Nisam znao dimenzije za responzivnost, ukucao sam na google i prvi link koji je izasao, te sam dimenzije uzeo. Nisam se na to
+fokusirao iz razloga sto mislim da dimenzije u ovom slucaju nisu toliko bitne, vec da je bitno da li mi to znamo uraditi ili ne.
+Nadam se da nece biti problem
+*/
 @media only screen and (max-width: 767px) {
     #main1{
         flex-direction: column-reverse;
@@ -416,10 +418,6 @@ font-size: 80px;
     }
     #maintext h{
         margin: 0 0 0 0;
-    }
-
-    #main1kvadrat{
-        
     }
     #main5pics{
         display: flex;
@@ -497,6 +495,7 @@ font-size: 80px;
         height: 80%;
     }
   }
+  /*Responzivnost za tablet*/
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     #main1{
         flex-direction: column-reverse;
@@ -509,10 +508,6 @@ font-size: 80px;
     }
     #maintext h{
         margin: 0 0 0 0;
-    }
-
-    #main1kvadrat{
-        
     }
     #main5pics{
         display: flex;
